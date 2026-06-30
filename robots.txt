@@ -1,0 +1,10 @@
+# Global rules for all search engines (Google, Bing, etc.)
+User-agent: *
+Allow: /
+Allow: /dining
+Allow: /roommates
+Disallow: /404.html
+Disallow: /404
+
+# Explicitly declare the sitemap path
+Sitemap: https://demitab.in/sitemap.xml

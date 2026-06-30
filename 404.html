@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>404 — Page Not Found | DemiTab</title>
+    <meta name="theme-color" content="#000000">
+
+    <!-- Premium Fintech Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (Living Design System Tokens) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#5BC5A7',       
+                        obsidian: '#000000',    
+                        elevated: '#121212',    
+                        border: '#27272A',      
+                        muted: '#8E8E93'
+                    },
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #000000; overflow-x: hidden; }
+        .glow-hover:hover {
+            box-shadow: 0 0 40px -10px rgba(91, 197, 167, 0.25);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="text-white selection:bg-brand selection:text-obsidian flex flex-col min-h-screen">
+
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-brand/5 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+
+    <header class="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center z-50">
+        <a href="/" class="flex items-center space-x-3 cursor-pointer group">
+            <img src="logo.jpg" alt="DemiTab Logo" class="w-10 h-10 rounded-xl object-cover border border-border group-hover:border-brand transition-colors shadow-[0_0_15px_rgba(91,197,167,0.15)]">
+            <span class="text-xl font-display font-bold tracking-tight text-white group-hover:text-brand transition-colors">DemiTab</span>
+        </a>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center w-full max-w-3xl mx-auto px-6 text-center">
+        <h1 class="font-display text-8xl md:text-9xl font-bold text-border mb-4 tracking-tighter">
+            404
+        </h1>
+        <h2 class="font-display text-2xl md:text-3xl font-bold text-white mb-4">
+            Ledger not found.
+        </h2>
+        <p class="text-muted text-lg font-sans mb-10 max-w-md mx-auto">
+            Even our proprietary math engine couldn't calculate how you got here. This page doesn't exist.
+        </p>
+        
+        <a href="/" class="inline-flex bg-white text-obsidian font-sans font-semibold px-8 py-4 rounded-xl items-center justify-center space-x-2 transition-all duration-300 hover:bg-gray-200">
+            <span>← Return Home</span>
+        </a>
+    </main>
+
+    <footer class="border-t border-border bg-obsidian py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-3 mb-6 md:mb-0">
+                <img src="logo.jpg" alt="DemiTab Logo" class="w-8 h-8 rounded-lg object-cover grayscale opacity-50">
+                <span class="text-sm font-display font-bold tracking-tight text-muted">DemiTab © 2026</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

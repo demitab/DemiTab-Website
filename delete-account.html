@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion Request — DemiTab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased py-12">
+
+    <div class="max-w-xl mx-auto px-6">
+        <a href="index.html" class="text-sm text-teal-400 hover:underline mb-8 inline-block">← Back to Home</a>
+        
+        <div class="bg-gray-950 border border-gray-800 p-8 rounded-2xl shadow-2xl mb-8">
+            <h1 class="text-3xl font-black text-white mb-4">Account Deletion Request</h1>
+            
+            <div class="bg-red-500/10 border border-red-500/30 text-red-400 text-sm p-4 rounded-xl mb-6 leading-relaxed">
+                <strong>⚠️ Important:</strong> Deleting your account is permanent. Once processed, your profile, authentication records, and active participation metrics will be permanently wiped from our cloud database. Any shared group expenses you hosted will remain calculated anonymously to ensure your friends' ledgers don't break, but your personal identity will be entirely severed from them.
+            </div>
+
+            <h2 class="text-lg font-bold text-gray-200 mb-2">How to Request Deletion</h2>
+            <p class="text-sm text-gray-400 mb-6">To request the complete removal of your data, please fill out the secure form below. Deletion requests are typically processed automatically within 24 to 48 hours.</p>
+
+            <form action="javascript:alert('Data Deletion Request Submitted successfully. Your credentials will be wiped within 24-48 hours.');" class="space-y-6 border-t border-gray-800 pt-6">
+                <div>
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Full Name</label>
+                    <input type="text" required placeholder="John Doe" class="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-teal-500 transition text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Registered Phone Number</label>
+                    <div class="flex">
+                        <span class="inline-flex items-center px-4 rounded-l-xl border border-r-0 border-gray-800 bg-gray-900 text-gray-500 text-sm font-bold">+91</span>
+                        <input type="tel" required pattern="[0-9]{10}" placeholder="10-Digit Mobile Number" class="w-full bg-gray-900 border border-gray-800 rounded-r-xl px-4 py-3 text-white focus:outline-none focus:border-teal-500 transition text-sm font-medium">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Reason for Deletion (Optional)</label>
+                    <div class="space-y-2.5 text-sm text-gray-300">
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="reason" class="w-4 h-4 rounded border-gray-800 bg-gray-900 text-teal-500 focus:ring-teal-500/30">
+                            <span>I no longer need to split bills</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="reason" class="w-4 h-4 rounded border-gray-800 bg-gray-900 text-teal-500 focus:ring-teal-500/30">
+                            <span>I am changing my phone number</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="reason" class="w-4 h-4 rounded border-gray-800 bg-gray-900 text-teal-500 focus:ring-teal-500/30">
+                            <span>Privacy concerns</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="reason" class="w-4 h-4 rounded border-gray-800 bg-gray-900 text-teal-500 focus:ring-teal-500/30">
+                            <span>Other</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900/60 p-4 rounded-xl border border-gray-800/80">
+                    <label class="flex items-start space-x-3 cursor-pointer text-xs text-gray-400 leading-normal">
+                        <input type="checkbox" required class="mt-0.5 w-4 h-4 rounded border-gray-800 bg-gray-900 text-teal-500 focus:ring-teal-500/30">
+                        <span><strong>Consent:</strong> I understand that this action cannot be undone and explicitly request that DemiTab purge my data from its servers.</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-3.5 rounded-xl transition shadow-lg text-sm tracking-wide">
+                    Submit Deletion Request
+                </button>
+            </form>
+        </div>
+
+        <div class="bg-gradient-to-br from-gray-950 to-gray-900 border border-gray-800 p-6 rounded-2xl text-center">
+            <h3 class="font-bold text-white mb-1.5 text-sm">💡 Alternative In-App Deletion</h3>
+            <p class="text-xs text-gray-400 leading-relaxed max-w-md mx-auto">
+                If you still have the app installed on your device, you do not need to wait 24 hours for a web request. You can instantly wipe your entire data footprint by navigating to <span class="text-teal-400 font-semibold">Account Hub > Delete Account</span> directly inside the app.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

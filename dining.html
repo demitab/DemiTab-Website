@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Targeted SEO for Dining & Restaurant Intent -->
+    <title>DemiTab — The Ultimate Restaurant Bill Splitter.</title>
+    <meta name="title" content="DemiTab — The Ultimate Restaurant Bill Splitter.">
+    <meta name="description" content="Stop fighting over the Zomato discount. Snap a photo of your restaurant receipt and let our AI calculate fractional shares, multi-tier taxes, and app discounts instantly.">
+    <meta name="keywords" content="split restaurant bill, zomato discount splitter, OCR receipt scanner, swiggy dineout bill split, group dining calculator, demitab">
+    <meta name="author" content="DemiTab">
+    <meta name="theme-color" content="#000000">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://demitab.in/dining">
+    <meta property="og:title" content="DemiTab — Math without the aftermath.">
+    <meta property="og:description" content="Snap a receipt and let AI do the math. Effortlessly split taxes, scale Swiggy/Zomato discounts, and settle group tabs instantly.">
+    <meta property="og:image" content="https://demitab.in/og-image.jpg">
+
+    <!-- Premium Fintech Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (Living Design System Tokens) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#5BC5A7',       
+                        obsidian: '#000000',    
+                        elevated: '#121212',    
+                        border: '#27272A',      
+                        muted: '#8E8E93',       
+                        alert: '#FF4D4D'        
+                    },
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS Micro-Interactions -->
+    <style>
+        body { background-color: #000000; overflow-x: hidden; }
+        .glass-panel {
+            background: rgba(18, 18, 18, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(39, 39, 42, 0.8);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 40px -10px rgba(91, 197, 167, 0.25);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="text-white selection:bg-brand selection:text-obsidian flex flex-col min-h-screen">
+
+    <!-- Ambient Background Gradient Glow -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <header class="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center z-50">
+        <a href="/" class="flex items-center space-x-3 cursor-pointer group">
+            <img src="logo.png" alt="DemiTab Logo" class="w-10 h-10 rounded-xl object-cover border border-border group-hover:border-brand transition-colors shadow-[0_0_15px_rgba(91,197,167,0.15)]">
+            <span class="text-xl font-display font-bold tracking-tight text-white group-hover:text-brand transition-colors">DemiTab</span>
+        </a>
+        
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-muted">
+            <a href="/" class="hover:text-brand transition-colors duration-300">Home</a>
+            <a href="/#simulator" class="hover:text-brand transition-colors duration-300">The Simulator</a>
+        </nav>
+
+        <div class="flex items-center space-x-4">
+            <a href="https://app.demitab.in" class="hidden md:block text-sm font-medium text-white hover:text-brand transition">Log in</a>
+            <a href="https://app.demitab.in" class="text-sm font-semibold bg-transparent border border-border px-5 py-2.5 rounded-lg hover:border-brand hover:text-brand transition-all duration-300">
+                Open Web App
+            </a>
+        </div>
+    </header>
+
+    <!-- Dining Hero Section -->
+    <main class="w-full max-w-7xl mx-auto px-6 pt-16 pb-24 text-center relative z-10">
+        <div class="inline-flex items-center space-x-2 bg-brand/10 border border-brand/30 text-brand rounded-full px-4 py-1.5 w-max mx-auto mb-8">
+            <span class="text-xs font-bold uppercase tracking-widest">For The Frequent Foodie</span>
+        </div>
+        
+        <h1 class="font-display text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-6">
+            The end of the <br />
+            <span class="text-brand">group chat math.</span>
+        </h1>
+        
+        <p class="text-lg md:text-xl text-muted max-w-2xl mx-auto leading-relaxed font-sans mb-10">
+            40 items. 5 friends. 2 Zomato discounts. 1 perfectly split bill in under 3 seconds. Stop manually calculating who owes what for taxes and tips.
+        </p>
+
+        <a href="/" class="inline-flex bg-brand text-obsidian font-sans font-semibold px-8 py-4 rounded-xl items-center justify-center space-x-2 transition-all duration-300 glow-hover shadow-[0_0_30px_rgba(91,197,167,0.3)]">
+            <span>Download DemiTab for Free</span>
+        </a>
+    </main>
+
+    <!-- The Restaurant Bento Box Features -->
+    <section class="w-full max-w-7xl mx-auto px-6 pb-32">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Feature 1: OCR Magic -->
+            <div class="glass-panel p-8 rounded-3xl md:col-span-2 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand/5 blur-[80px] rounded-full group-hover:bg-brand/10 transition-colors"></div>
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-elevated border border-border rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">📸</span>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-3">Proprietary Vision Algorithm</h3>
+                    <p class="text-muted leading-relaxed max-w-md">No more manual entry. Simply snap a photo of the receipt. Our AI instantly parses the items, accurately extracts prices, and organizes them into a pristine, itemized checklist.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2: Proportional Taxes -->
+            <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-elevated border border-border rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">⚖️</span>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-white mb-3">Fair Tax Distribution</h3>
+                    <p class="text-muted text-sm leading-relaxed">If you ordered a ₹300 salad and your friend ordered a ₹2500 steak, our engine ensures you only pay the exact percentage of the GST and Service Charge associated with your food.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3: Zomato Scaling -->
+            <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-elevated border border-border rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-2xl">📉</span>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-white mb-3">The Zomato Scale Math</h3>
+                    <p class="text-muted text-sm leading-relaxed">Got ₹1200 off via Swiggy Dineout? The engine scales the third-party discount across the bill based on exact consumption, not a blind 50/50 average.</p>
+                </div>
+            </div>
+
+            <!-- Feature 4: Settlement -->
+            <div class="glass-panel p-8 rounded-3xl md:col-span-2 relative overflow-hidden group">
+                <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+                    <div>
+                        <div class="w-12 h-12 bg-elevated border border-border rounded-xl flex items-center justify-center mb-6">
+                            <span class="text-2xl">💸</span>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-3">Settle Instantly</h3>
+                        <p class="text-muted leading-relaxed max-w-sm">Tap one button to lock the tab and push automated UPI settlement requests to your friends. The Host-Cover algorithm ensures ledgers balance to the exact rupee.</p>
+                    </div>
+                    <div class="bg-obsidian border border-border p-5 rounded-2xl min-w-[250px]">
+                        <p class="text-xs text-muted uppercase tracking-wider font-semibold mb-3">Active Ledger</p>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-white">Rahul owes you</span>
+                            <span class="text-brand font-mono font-bold">₹1,450</span>
+                        </div>
+                        <div class="flex justify-between items-center border-t border-border/50 pt-2">
+                            <span class="text-white">Sneha owes you</span>
+                            <span class="text-brand font-mono font-bold">₹820</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer class="border-t border-border bg-obsidian py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-3 mb-6 md:mb-0">
+                <img src="logo.png" alt="DemiTab Logo" class="w-8 h-8 rounded-lg object-cover grayscale opacity-50">
+                <span class="text-sm font-display font-bold tracking-tight text-muted">DemiTab © 2026</span>
+            </div>
+            
+            <div class="flex space-x-6 text-sm text-muted">
+                <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="/delete-account" class="hover:text-alert transition-colors">Delete Account</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

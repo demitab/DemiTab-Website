@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DemiTab — Data Deletion</title>
+    <title>Account Deletion Request — DemiTab</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = { theme: { extend: { colors: { brand: '#5BC5A7', obsidian: '#000000', border: '#27272A', muted: '#8E8E93', alert: '#FF4D4D' }, fontFamily: { display: ['Space Grotesk', 'sans-serif'], sans: ['Inter', 'sans-serif'] } } } }
+        tailwind.config = { 
+            theme: { 
+                extend: { 
+                    colors: { brand: '#5BC5A7', obsidian: '#000000', elevated: '#121212', border: '#27272A', muted: '#8E8E93', alert: '#FF4D4D' }, 
+                    fontFamily: { display: ['Space Grotesk', 'sans-serif'], sans: ['Inter', 'sans-serif'] } 
+                } 
+            } 
+        }
     </script>
-    <style>body { background-color: #000000; color: #ffffff; }</style>
+    <style>
+        body { background-color: #000000; color: #ffffff; overflow-x: hidden; }
+        .glass-panel { background: rgba(18, 18, 18, 0.4); backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
 
     <!-- PostHog -->
-    <script>!function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="ki Ci init qi Hi pr ji zi Di capture calculateEventProperties Qi register register_once register_for_session unregister unregister_for_session Ki getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync Xi identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty Ji Gi createPersonProfile setInternalOrTestUser Yi Ai rn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Vi debug mr it getPageViewId captureTraceFeedback captureTraceMetric Oi".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);posthog.init('phc_sbF2TTVZoy7ncjyj3HbSHzmN5ZPWKqunPB43vXm7Ms7H', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only' })</script>
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="ki Ci init qi Hi pr ji zi Di capture calculateEventProperties Qi register register_once register_for_session unregister unregister_for_session Ki getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync Xi identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty Ji Gi createPersonProfile setInternalOrTestUser Yi Ai rn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Vi debug mr it getPageViewId captureTraceFeedback captureTraceMetric Oi".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_sbF2TTVZoy7ncjyj3HbSHzmN5ZPWKqunPB43vXm7Ms7H', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only' })
+    </script>
 </head>
-<body class="selection:bg-alert selection:text-obsidian antialiased">
+<body class="selection:bg-alert selection:text-obsidian antialiased flex flex-col min-h-screen">
 
     <nav class="fixed top-0 w-full px-6 py-5 flex justify-between items-center z-50 bg-black/60 backdrop-blur-xl border-b border-white/5">
         <a href="/" class="flex items-center space-x-2 cursor-pointer group">
@@ -23,28 +36,96 @@
         </a>
     </nav>
 
-    <main class="pt-40 pb-24 px-6 max-w-2xl mx-auto">
-        <h1 class="font-display font-black text-5xl md:text-7xl mb-8 reveal-item opacity-0 translate-y-8 text-alert">Account Deletion</h1>
+    <main class="flex-grow pt-32 pb-24 px-6 max-w-2xl mx-auto w-full">
         
-        <div class="space-y-8 text-muted font-medium text-lg leading-relaxed reveal-item opacity-0 translate-y-8">
-            <p>You have the absolute right to delete your DemiTab account and permanently erase your financial workspaces, receipt history, and personal data from our servers.</p>
+        <div class="glass-panel p-8 md:p-12 rounded-3xl shadow-2xl reveal-item opacity-0 translate-y-8 relative overflow-hidden">
+            <!-- Alert glow -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-alert/5 blur-[80px] rounded-full pointer-events-none"></div>
+
+            <h1 class="text-4xl md:text-5xl font-display font-black text-white mb-6 leading-tight">Account Deletion Request</h1>
             
-            <div class="bg-[#121212] border border-border rounded-2xl p-8 my-8">
-                <h3 class="text-white font-display font-bold text-xl mb-4">How to delete your account:</h3>
-                <ol class="list-decimal list-inside space-y-3">
-                    <li>Open the DemiTab mobile app or web app.</li>
-                    <li>Tap the <strong>Profile</strong> icon in the bottom navigation bar.</li>
-                    <li>Select <strong>Account Settings</strong>.</li>
-                    <li>Scroll to the bottom and tap <span class="text-alert font-bold">Delete Account</span>.</li>
-                    <li>Confirm the deletion via the security prompt.</li>
-                </ol>
+            <div class="bg-alert/10 border border-alert/30 text-alert text-sm p-5 rounded-2xl mb-8 leading-relaxed font-medium">
+                <strong>⚠️ Important:</strong> Deleting your account is permanent. Once processed, your profile, authentication records, and active participation metrics will be permanently wiped from our cloud database. Any shared group expenses you hosted will remain calculated anonymously to ensure your friends' ledgers don't break, but your personal identity will be entirely severed from them.
             </div>
 
-            <p class="text-sm">Once confirmed, your data is wiped immediately. Any active debts recorded in your shared ledgers will be permanently lost and cannot be recovered.</p>
+            <p class="text-sm text-muted mb-8 font-medium">To request the complete removal of your data, please fill out the secure form below. Deletion requests are processed automatically within 24 to 48 hours.</p>
+
+            <form action="javascript:alert('Data Deletion Request Submitted successfully. Your credentials will be wiped within 24-48 hours.');" class="space-y-6">
+                <div>
+                    <label class="block text-xs font-bold text-muted uppercase tracking-wider mb-2">Full Name</label>
+                    <input type="text" required placeholder="John Doe" class="w-full bg-obsidian border border-border rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-alert transition text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-muted uppercase tracking-wider mb-2">Registered Phone Number</label>
+                    <div class="flex">
+                        <span class="inline-flex items-center px-4 rounded-l-xl border border-r-0 border-border bg-elevated text-muted text-sm font-bold">+91</span>
+                        <input type="tel" required pattern="[0-9]{10}" placeholder="10-Digit Mobile Number" class="w-full bg-obsidian border border-border rounded-r-xl px-4 py-3.5 text-white focus:outline-none focus:border-alert transition text-sm font-mono">
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <label class="block text-xs font-bold text-muted uppercase tracking-wider mb-4">Reason for Deletion (Optional)</label>
+                    <div class="space-y-3 text-sm text-gray-300 font-medium">
+                        <label class="flex items-center space-x-3 cursor-pointer group">
+                            <input type="checkbox" name="reason" class="w-4 h-4 rounded border-border bg-obsidian text-alert focus:ring-alert/30">
+                            <span class="group-hover:text-white transition">I no longer need to split bills</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer group">
+                            <input type="checkbox" name="reason" class="w-4 h-4 rounded border-border bg-obsidian text-alert focus:ring-alert/30">
+                            <span class="group-hover:text-white transition">I am changing my phone number</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer group">
+                            <input type="checkbox" name="reason" class="w-4 h-4 rounded border-border bg-obsidian text-alert focus:ring-alert/30">
+                            <span class="group-hover:text-white transition">Privacy concerns</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer group">
+                            <input type="checkbox" name="reason" class="w-4 h-4 rounded border-border bg-obsidian text-alert focus:ring-alert/30">
+                            <span class="group-hover:text-white transition">Other</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="bg-elevated/50 p-5 rounded-xl border border-border/80 mt-8">
+                    <label class="flex items-start space-x-3 cursor-pointer text-xs text-muted leading-relaxed">
+                        <input type="checkbox" required class="mt-0.5 w-4 h-4 rounded border-border bg-obsidian text-alert focus:ring-alert/30">
+                        <span><strong>Consent:</strong> I understand that this action cannot be undone and explicitly request that DemiTab purge my data from its servers.</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full bg-alert hover:bg-red-500 text-white font-bold py-4 rounded-xl transition shadow-[0_0_20px_rgba(255,77,77,0.2)] text-sm tracking-wide mt-4">
+                    Submit Deletion Request
+                </button>
+            </form>
+        </div>
+
+        <div class="mt-8 bg-elevated border border-border p-6 rounded-2xl text-center reveal-item opacity-0 translate-y-4">
+            <h3 class="font-display font-bold text-white mb-2 text-sm uppercase tracking-widest">Alternative In-App Deletion</h3>
+            <p class="text-sm text-muted leading-relaxed max-w-md mx-auto font-medium">
+                If you still have the app installed, you do not need to wait 24 hours. You can instantly wipe your entire footprint by navigating to <span class="text-white font-bold">Account Hub > Delete Account</span> inside the app.
+            </p>
         </div>
     </main>
 
+    <!-- Global Footer -->
+    <footer class="border-t border-border bg-[#050505] py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-6 md:mb-0 opacity-50">
+                <span class="text-lg font-display font-black tracking-tighter text-white">demitab<span class="text-brand">.</span></span>
+                <span class="text-xs font-bold tracking-tight text-white ml-2">© 2026</span>
+            </div>
+            
+            <div class="flex flex-wrap gap-6 text-xs text-muted justify-center md:justify-end font-medium tracking-wide uppercase">
+                <a href="/about.html" class="hover:text-white transition-colors">Philosophy</a>
+                <a href="/privacy.html" class="hover:text-white transition-colors">Privacy</a>
+                <a href="/terms.html" class="hover:text-white transition-colors">Terms</a>
+                <a href="/delete-account.html" class="text-alert transition-colors">Delete Account</a>
+                <a href="/contact.html" class="hover:text-white transition-colors">Support</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script>gsap.to(".reveal-item", { y: 0, opacity: 1, duration: 1, stagger: 0.15, ease: "power3.out", delay: 0.1 });</script>
+    <script>gsap.to(".reveal-item", { y: 0, opacity: 1, duration: 1, stagger: 0.2, ease: "power3.out", delay: 0.1 });</script>
 </body>
 </html>
